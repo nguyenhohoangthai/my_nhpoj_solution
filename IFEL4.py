@@ -1,0 +1,6 @@
+x = int(input())
+a, b = map(int, input().split())
+d1, d2, d3 = map(int, input().split())
+if (x <= a): print(x * d1)
+elif (x <= b): print(a*d1 + (x-a) * d2)
+else: print(a*d1 + (b-a) * d2 + (x-b) * d3)
